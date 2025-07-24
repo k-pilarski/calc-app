@@ -1,3 +1,6 @@
-import { key0Clicked } from './features/taskHandler.js'
+import { clickKey } from './features/taskHandler.js'
+
+export const calculations = []
 
 
+clickKey();
