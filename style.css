@@ -1,0 +1,134 @@
+/* Color Variables */
+
+:root {
+    --bg: hsl(222, 26%, 31%);
+    --global-font: hsl(0, 0%, 100%);
+    --screen-bg: hsl(224, 36%, 15%);
+    --keypad-bg: hsl(223, 31%, 20%);
+    --key-font: hsl(221, 14%, 31%);
+    --key-bg: hsl(0, 0%, 90%);
+    --key-bg-hover: hsl(0, 0%, 80%);
+    --key-shadow: hsl(28, 16%, 65%);
+    --key-del-reset-bg: hsl(225, 21%, 49%);
+    --key-del-reset-bg-hover: hsl(225, 21%, 39%);
+    --key-del-reset-shadow: hsl(224, 28%, 35%);
+    --key-eq-bg: hsl(6, 63%, 50%);
+    --key-eq-bg-hover: hsl(6, 63%, 40%);
+    --key-eq-shadow: hsl(6, 70%, 34%);
+}
+
+/* Global Variables */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg);
+    color: var(--global-font);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1440px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+header {
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+main {
+    width: 35%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.screen {
+    width: 100%;
+    height: 20%;
+    background: var(--screen-bg);
+    border-radius: 0.3em;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.keypad {
+    width: 100%;
+    height: 80%;
+    background: var(--keypad-bg);
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5em;
+    padding: 1.5em;
+}
+.key {
+    background: var(--key-bg);
+    color: var(--key-font);
+    border-radius: 0.5em;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.1em 0 0 var(--key-shadow);
+    cursor: pointer;
+}
+
+.key:hover {
+    background: var(--key-bg-hover);
+}
+
+.del {
+    color: var(--global-font);
+    background: var(--key-del-reset-bg);
+    box-shadow: 0 0.1em 0 0 var(--key-del-reset-shadow);
+    font-size: 1.5rem;
+}
+
+.reset {
+    grid-column: 1/3;
+    color: var(--global-font);
+    background: var(--key-del-reset-bg);
+    box-shadow: 0 0.1em 0 0 var(--key-del-reset-shadow);
+    font-size: 1.5rem;
+}
+
+.reset:hover,
+.del:hover {
+    background: var(--key-del-reset-bg-hover);
+}
+
+.eq {
+    grid-column: 3/5;
+    color: var(--global-font);
+    background: var(--key-eq-bg);
+    box-shadow: 0 0.1em 0 0 var(--key-eq-shadow);
+}
+
+.eq:hover {
+    background: var(--key-eq-bg-hover);
+}
