@@ -1,0 +1,20 @@
+export const screen = document.getElementById('js--screen-id');
+
+export const key0 = document.getElementById('js--key-0-id');
+export const key1 = document.getElementById('js--key-1-id');
+export const key2 = document.getElementById('js--key-2-id');
+export const key3 = document.getElementById('js--key-3-id');
+export const key4 = document.getElementById('js--key-4-id');
+export const key5 = document.getElementById('js--key-5-id');
+export const key6 = document.getElementById('js--key-6-id');
+export const key7 = document.getElementById('js--key-7-id');
+export const key8 = document.getElementById('js--key-8-id');
+export const key9 = document.getElementById('js--key-9-id');
+export const keyDel = document.getElementById('js--key-del-id');
+export const keyReset = document.getElementById('js--key-reset-id');
+export const keyAdd = document.getElementById('js--key-add-id');
+export const keySub = document.getElementById('js--key-sub-id');
+export const keyMultiply = document.getElementById('js--key-multiply-id');
+export const keyDivide = document.getElementById('js--key-divide-id');
+export const keyPoint = document.getElementById('js--key-point-id');
+export const keyEquals = document.getElementById('js--key-equals-id');
