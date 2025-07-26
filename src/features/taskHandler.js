@@ -119,7 +119,7 @@ export const clickKey = () => {
             calculations.push(screen.textContent)
         }
     });
-    
+     
     keyEquals.addEventListener('click', () => {
         if (screen.textContent.length > 0) {
             calculations.push(screen.textContent)
